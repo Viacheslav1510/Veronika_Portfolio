@@ -1,0 +1,22 @@
+.App {
+  background-color: black;
+}
+
+.my-image {
+  height: 300px;
+  width: 100%;
+}
+
+.iphone-image {
+  height: 200px;
+  width: 120px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
