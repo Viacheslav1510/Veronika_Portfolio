@@ -63,10 +63,10 @@ function Home() {
         </Grid>
       </Grid>
       <Grid item xs={6}>
-        <img src={MyImage1} alt="my-image" className="my-image" />
+        <img src={MyImage2} alt="my-image" className="my-image" />
       </Grid>
       <Grid item xs={6}>
-        <img src={MyImage2} alt="my-image" className="my-image" />
+        <img src={MyImage1} alt="my-image" className="my-image" />
       </Grid>
       <Grid item xs={6} className="d-flex align-items-center">
         <Divider
