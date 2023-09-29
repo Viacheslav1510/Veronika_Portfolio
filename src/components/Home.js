@@ -19,7 +19,12 @@ function Home() {
         xs={6}
       >
         <Grid item>
-          <Typography level="h4">Veronika Vernigora</Typography>
+          <Typography
+            level="h3"
+            sx={{ fontFamily: "Playball", letterSpacing: 1, fontSize: "25px" }}
+          >
+            Veronika Vernigora
+          </Typography>
         </Grid>
         <Box component="div" sx={{ display: "inline" }} width="100%">
           <Divider
@@ -80,7 +85,12 @@ function Home() {
           }}
         ></Divider>
         <Grid>
-          <Typography level="h4">ABOUT ME</Typography>
+          <Typography
+            level="h4"
+            sx={{ fontFamily: "Playball", letterSpacing: 1, fontSize: "30px" }}
+          >
+            About Me
+          </Typography>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores,
           obcaecati iste quia quod unde consectetur
         </Grid>
