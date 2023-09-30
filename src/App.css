@@ -12,6 +12,9 @@
   width: 120px;
 }
 
+.react-player__preview {
+  z-index: 999;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

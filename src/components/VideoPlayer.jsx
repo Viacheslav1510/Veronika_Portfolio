@@ -6,7 +6,7 @@ import PauseIcon from "@mui/icons-material/Pause";
 
 import Iphone from "../assets/iphone.png";
 
-const VideoPlayer = ({ url, videoId, isPlaying, onPlay }) => {
+const VideoPlayer = ({ url, videoId, isPlaying, onPlay, light }) => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
   const handlePlay = () => {
@@ -16,15 +16,30 @@ const VideoPlayer = ({ url, videoId, isPlaying, onPlay }) => {
 
   return (
     <Grid>
-      <Grid sx={{ position: "relative", top: "6.5rem" }}>
-        <ReactPlayer width={105} height={191} playing={isPlaying} url={url} />
+      <Grid sx={{ position: "relative", top: "4.5rem", marginTop: "20%" }}>
+        <ReactPlayer
+          width={105}
+          height={191}
+          playing={isPlaying}
+          url={url}
+          light={light}
+          playIcon={
+            <IconButton onClick={handlePlay} sx={{ opacity: "1", zIndex: 110 }}>
+              <PlayArrowIcon
+                sx={{
+                  color: "white",
+                  fontSize: "3rem",
+                }}
+              />
+            </IconButton>
+          }
+        />
       </Grid>
       <Grid
         sx={{
           position: "relative",
-          bottom: "1.5rem",
-          left: "0.9rem",
-          zIndex: 555,
+          bottom: "3rem",
+          left: "2.1rem",
           background: "none",
           width: "10%",
         }}
@@ -33,13 +48,13 @@ const VideoPlayer = ({ url, videoId, isPlaying, onPlay }) => {
           <IconButton
             className="controlButton"
             onClick={handlePlay}
-            sx={{ opacity: "0.1" }}
+            sx={{ opacity: "0.1", zIndex: 99 }}
           >
             <PauseIcon
               sx={{
                 color: "white",
-                fontSize: "4rem",
-                opacity: "0",
+                fontSize: "1rem",
+                opacity: "0.1",
               }}
             />
           </IconButton>
@@ -47,12 +62,12 @@ const VideoPlayer = ({ url, videoId, isPlaying, onPlay }) => {
           <IconButton
             className="controlButton"
             onClick={handlePlay}
-            sx={{ opacity: "0.5" }}
+            sx={{ opacity: "0.5", zIndex: 99 }}
           >
             <PlayArrowIcon
               sx={{
                 color: "white",
-                fontSize: "4rem",
+                fontSize: "1rem",
               }}
             />
           </IconButton>

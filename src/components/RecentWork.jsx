@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Grid, Typography, Divider, Box, IconButton } from "@mui/joy";
+import { Grid, Divider } from "@mui/joy";
 import VideoPlayer from "./VideoPlayer";
 
 import Light1 from "../assets/light1.jpg";
@@ -27,9 +27,9 @@ function RecentWork() {
             marginTop: "3%",
             color: "black",
             fontWeight: "600",
-            fontSize: "40px",
-            fontFamily: "Great Vibes",
-            letterSpacing: 2,
+            fontSize: "30px",
+            fontFamily: "Cormorant Garamond",
+            marginBottom: "5%",
           }}
         >
           Recent Work

@@ -21,7 +21,11 @@ function Home() {
         <Grid item>
           <Typography
             level="h3"
-            sx={{ fontFamily: "Playball", letterSpacing: 1, fontSize: "25px" }}
+            sx={{
+              fontFamily: "Cormorant Garamond",
+              fontSize: "25px",
+              fontWeight: 700,
+            }}
           >
             Veronika Vernigora
           </Typography>
@@ -38,7 +42,16 @@ function Home() {
           />
         </Box>
         <Grid item>
-          <Typography level="h5">Reels Creator</Typography>
+          <Typography
+            level="h5"
+            sx={{
+              fontFamily: "Cormorant Garamond",
+              fontSize: "20px",
+              fontWeight: 700,
+            }}
+          >
+            Video Creator
+          </Typography>
         </Grid>
         <Grid item class="d-flex justify-content-beetween mt-5">
           <a
@@ -87,7 +100,11 @@ function Home() {
         <Grid>
           <Typography
             level="h4"
-            sx={{ fontFamily: "Playball", letterSpacing: 1, fontSize: "30px" }}
+            sx={{
+              fontFamily: "Cormorant Garamond",
+              fontSize: "28px",
+              fontWeight: 700,
+            }}
           >
             About Me
           </Typography>
