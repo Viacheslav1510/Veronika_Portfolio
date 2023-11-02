@@ -50,7 +50,7 @@ function Home() {
               fontWeight: 700,
             }}
           >
-            Video Creator
+            Video & UGC Creator
           </Typography>
         </Grid>
         <Grid item class="d-flex justify-content-beetween mt-5">
@@ -60,7 +60,7 @@ function Home() {
             className="ms-2 me-2 "
             style={{
               color: "black",
-              fontSize: "0.7rem",
+              fontSize: "0.6rem",
               textDecoration: "none",
             }}
           >
@@ -108,8 +108,19 @@ function Home() {
           >
             About Me
           </Typography>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores,
-          obcaecati iste quia quod unde consectetur
+          <Typography
+            sx={{
+              fontFamily: "Cormorant Garamond",
+              fontSize: "14px",
+              fontWeight: 700,
+            }}
+          >
+            I'm a content creator specialised in creating high-converting
+            content for Instagram and TikTok. I've worked with numerous European
+            brands from niches like: fashion, beauty, food, lifestyle. If you
+            want to make your brand shine, then I'm the content creator you
+            need.
+          </Typography>
         </Grid>
       </Grid>
       <RecentWork />

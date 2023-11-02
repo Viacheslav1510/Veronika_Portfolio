@@ -9,6 +9,7 @@ import Light3 from "../assets/light3.jpg";
 function RecentWork() {
   const [currentPlayingVideoId, setCurrentPlayingVideoId] = useState(null);
 
+  console.log(currentPlayingVideoId);
   const handleVideoPlay = (videoId) => {
     setCurrentPlayingVideoId(videoId);
   };
