@@ -15,8 +15,8 @@ const VideoPlayer = ({ url, videoId, isPlaying, onPlay, light }) => {
   };
 
   return (
-    <Grid>
-      <Grid sx={{ position: "relative", top: "4.5rem", marginTop: "20%" }}>
+    <Grid sx={{ position: "relative", maxHeight: "700px" }}>
+      <Grid sx={{ position: "absolute", bottom: "2.5rem", marginTop: "20%" }}>
         <ReactPlayer
           width={105}
           height={191}
@@ -37,8 +37,8 @@ const VideoPlayer = ({ url, videoId, isPlaying, onPlay, light }) => {
       </Grid>
       <Grid
         sx={{
-          position: "relative",
-          bottom: "3rem",
+          position: "absolute",
+          bottom: "7rem",
           left: "2.1rem",
           background: "none",
           width: "10%",
@@ -73,7 +73,7 @@ const VideoPlayer = ({ url, videoId, isPlaying, onPlay, light }) => {
           </IconButton>
         )}
       </Grid>
-      <Grid sx={{ position: "relative", bottom: "10rem", right: "0.47rem" }}>
+      <Grid sx={{ position: "relative", bottom: "2.2rem", right: "0.47rem" }}>
         <img src={Iphone} alt="iphone" className="iphone-image" />
       </Grid>
     </Grid>
